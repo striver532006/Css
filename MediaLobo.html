@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedioLobo</title>
+    <style>
+         /* YOUTUBE */
+ .youtube{
+    border:2px solid red;
+    background-color: red;
+    width:500px;
+    height:300px;
+    border-radius:30px;
+    margin:50px;
+    margin-bottom:100px;
+}
+.lobo{
+    width: 0;
+    height: 0;
+    border-top:90px solid transparent;
+    border-left: 180px solid white;
+    border-bottom: 90px solid transparent;
+    margin-top:60px;
+    margin-left:180px;
+}
+#txta1{
+    color:red;
+    font-size: 100px;
+    line-height: 50px;
+    text-shadow: 0px 15px 5px rgba(0,0,0,.2);
+    animation: sec 2s infinite;
+    margin-top:-40px;
+    margin-left:80px;
+}
+#txta2{
+    color:rgb(232, 15, 15);
+    font-size: 80px;
+    line-height: 50px;
+    text-shadow: 0px 15px 5px rgba(0,0,0,.2);
+    animation: sec 2s infinite;
+    margin-left:200px;
+    margin-top:50px;
+}
+
+/* WHATSAPP */
+.whatsapp{
+    border:10px solid green;
+    background-color: green;
+    width:500px;
+    height:500px;
+    border-radius:300px;
+    margin:50px;
+    margin-bottom:100px;
+}
+.what{
+    border:10px solid white;
+    width:350px;
+    height:350px;
+    border-radius:300px;
+    margin:60px;
+}
+.apps{
+    width: 0;
+    height: 0;
+    border-top:90px solid transparent;
+    border-right: 100px solid green;
+    border-bottom: 1px solid transparent;
+    margin-top:300px;
+    margin-left:-70px;
+}
+.apps1{
+    height: 250px;
+    width: 40px;
+    background-color: white;
+    transform: rotate(140deg);
+    margin: 100px;
+    position: relative;
+    margin-top:-300px;
+    margin-left:130px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.apps2{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    transform: rotate(50deg);
+    position: relative;
+    margin-top:-348px;
+    margin-left:90px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.apps3{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    transform: rotate(50deg);
+    position: relative;
+    margin-top:124px;
+    margin-left:220px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#txtb1{
+    color:green;
+    font-size: 100px;
+    line-height: 50px;
+    text-shadow: 0px 15px 5px rgba(0,0,0,.2);
+    animation: sec 2s infinite;
+    margin-top:-40px;
+    margin-left:80px;
+}
+#txtb2{
+    color:green;
+    font-size: 80px;
+    line-height: 50px;
+    text-shadow: 0px 15px 5px rgba(0,0,0,.2);
+    animation: sec 2s infinite;
+    margin-left:200px;
+    margin-top:50px;
+}
+
+/* FACEBOOK */
+.facebook{
+    border:2px solid rgb(0, 110, 255);
+    background-color:rgb(0, 110, 255);
+    width:450px;
+    height:450px;
+    border-radius:50px;
+    margin:50px;
+    margin-bottom:100px;
+}
+.txt1{
+    border:10px solid white;
+    background-color: white;
+    width:30px;
+    height:340px;
+    border-top-left-radius:30px;
+    margin:90px;
+    margin-left:190px;
+}
+.txt2{
+    border:10px solid white;
+    background-color: white;
+    width:80px;
+    height:30px;
+    margin-left:230px;
+    margin-top:-450px;
+    border-top-right-radius:30px;
+}
+.txt3{
+    border:10px solid white;
+    background-color: white;
+    width:130px;
+    height:30px;
+    margin-top:80px;
+    margin-left:150px;
+}
+#txtc1{
+    color:rgb(0, 110, 255);
+    font-size: 100px;
+    line-height: 50px;
+    text-shadow: 0px 15px 5px rgba(0,0,0,.2);
+    animation: sec 2s infinite;
+    margin-top:-40px;
+    margin-left:80px;
+}
+#txtc2{
+    color:rgb(0, 110, 255);
+    font-size: 80px;
+    line-height: 50px;
+    text-shadow: 0px 15px 5px rgba(0,0,0,.2);
+    animation: sec 2s infinite;
+    margin-left:200px;
+    margin-top:50px;
+}
+/* INSTAGRAM */
+.instgram{
+    border:10px solid rgb(128, 0, 77);
+    background-color: rgb(128, 0, 77);
+    width:500px;
+    height:500px;
+    border-radius:300px;
+    margin:50px;
+    margin-bottom:100px;
+}
+.insta{
+    border:10px solid white;
+    width:325px;
+    height:325px;
+    border-radius:80px;
+    margin:75px;
+}
+.gram1{
+    border:10px solid white;
+    width:150px;
+    height:150px;
+    border-radius:120px;
+    margin:80px;
+}
+.gram2{
+    border:10px solid white;
+    background-color: white;
+    width:20px;
+    height:20px;
+    border-radius:100px;
+    margin-left:240px;
+    margin-top:-280px;
+}
+#txtd1{
+    color:rgb(128, 0, 77);
+    font-size: 100px;
+    line-height: 50px;
+    text-shadow: 0px 15px 5px rgba(0,0,0,.2);
+    animation: sec 2s infinite;
+    margin-top:-40px;
+    margin-left:80px;
+}
+#txtd2{
+    color:rgb(128, 0, 77);
+    font-size: 80px;
+    line-height: 50px;
+    text-shadow: 0px 15px 5px rgba(0,0,0,.2);
+    animation: sec 2s infinite;
+    margin-left:200px;
+    margin-top:50px;
+}
+
+/* LINKEDIN */
+.linkedin{
+    border:10px solid rgb(0, 105, 255);
+    background-color: rgb(0, 105, 255);
+    width:500px;
+    height:500px;
+    border-radius:300px;
+    margin:50px;
+    margin-bottom:100px;
+}
+.link1{
+    border:10px solid white;
+    background-color: white;
+    width:40px;
+    height:220px;
+    margin-top:190px;
+    margin-left:120px;
+}
+.link2{
+    border:10px solid white;
+    background-color: white;
+    width:40px;
+    height:40px;
+    border-radius:30px;
+    margin-top:-330px;
+    margin-left:120px;
+}
+.link3{
+    border:10px solid white;
+    background-color: white;
+    width:40px;
+    height:220px;
+    margin-top:30px;
+    margin-left:210px;
+}
+.link4{
+    border:10px solid white;
+    background-color: white;
+    width:110px;
+    height:40px;
+    border-top-left-radius:40px;
+    border-top-right-radius:40px;
+    margin-top:-230px;
+    margin-left:260px;
+}
+.link5{
+    border:10px solid white;
+    background-color: white;
+    width:40px;
+    height:160px;
+    margin-top:-10px;
+    margin-left:330px;
+}
+#txte1{
+    color:rgb(0, 105, 255);
+    font-size: 100px;
+    line-height: 50px;
+    text-shadow: 0px 15px 5px rgba(0,0,0,.2);
+    animation: sec 2s infinite;
+    margin-top:-40px;
+    margin-left:80px;
+}
+#txte2{
+    color:rgb(0, 105, 255);
+    font-size: 80px;
+    line-height: 50px;
+    text-shadow: 0px 15px 5px rgba(0,0,0,.2);
+    animation: sec 2s infinite;
+    margin-left:200px;
+    margin-top:50px;
+}
+
+/* MX-PLAYER */
+.mx-player{
+    border:10px solid rgb(0, 105, 255);
+    background-color: rgb(0, 105, 255);
+    width:500px;
+    height:500px;
+    border-radius:300px;
+    margin:50px;
+    margin-bottom:100px;
+}
+.trangle{
+    width: 0;
+    height: 0;
+    border-top:95px solid transparent;
+    border-left: 190px solid white;
+    border-bottom: 95px solid transparent;
+    margin:150px;
+    margin-left:200px;
+}
+#txtf1{
+    color:rgb(0, 105, 255);
+    font-size: 100px;
+    line-height: 50px;
+    text-shadow: 0px 15px 5px rgba(0,0,0,.2);
+    animation: sec 2s infinite;
+    margin-top:-40px;
+    margin-left:80px;
+}
+#txtf2{
+    color:rgb(0, 105, 255);
+    font-size: 80px;
+    line-height: 50px;
+    text-shadow: 0px 15px 5px rgba(0,0,0,.2);
+    animation: sec 2s infinite;
+    margin-left:200px;
+    margin-top:50px;
+}
+/* YT-MUSIC */
+.yt-music{
+    border:10px solid red;
+    background-color: red;
+    width:500px;
+    height:500px;
+    border-radius:300px;
+    margin:50px;
+    margin-bottom:100px;
+}
+.yt{
+    border:10px solid white;
+    width:350px;
+    height:350px;
+    border-radius:300px;
+    margin:60px;
+}
+.music{
+    width: 0;
+    height: 0;
+    border-top:90px solid transparent;
+    border-left: 150px solid white;
+    border-bottom: 90px solid transparent;
+    margin-top:90px;
+    margin-left:120px;
+}
+#txtg1{
+    color:red;
+    font-size: 100px;
+    line-height: 50px;
+    text-shadow: 0px 15px 5px rgba(0,0,0,.2);
+    animation: sec 2s infinite;
+    margin-top:-40px;
+    margin-left:80px;
+}
+#txtg2{
+    color:red;
+    font-size: 80px;
+    line-height: 50px;
+    text-shadow: 0px 15px 5px rgba(0,0,0,.2);
+    animation: sec 2s infinite;
+    margin-left:200px;
+    margin-top:50px;
+}
+/* PHOTOS */
+.photos{
+    border:10px solid rgb(241, 236, 236);
+    background-color: white;
+    width:500px;
+    height:500px;
+    border-radius:300px;
+    margin:50px;
+    margin-bottom:100px;
+}
+.circle1{
+    border:5px solid red;
+    background-color: red;
+    width:80px;
+    height: 150px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    margin-left:250px;
+    margin-top:90px;
+}
+.circle2{
+    border:5px solid rgb(233, 199, 6);
+    background-color: rgb(233, 199, 6);
+    width:150px;
+    height: 80px;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    margin-top:-90px;
+    margin-left:90px;
+}
+.circle3{
+    border:5px solid rgb(14, 195, 62);
+    background-color: rgb(14, 195, 62);
+    width:80px;
+    height: 150px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    margin-left:160px;
+}
+.circle4{
+    border:5px solid rgb(0, 105, 255);
+    background-color: rgb(0, 105, 255);
+    width:150px;
+    height: 80px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    margin-top:-160px;
+    margin-left:249px;
+}
+#txth1{
+    color:red;
+    font-size: 100px;
+    line-height: 50px;
+    text-shadow: 0px 15px 5px rgba(0,0,0,.2);
+    animation: sec 2s infinite;
+    margin-top:-40px;
+    margin-left:80px;
+}
+#txth2{
+    color:red;
+    font-size: 80px;
+    line-height: 50px;
+    text-shadow: 0px 15px 5px rgba(0,0,0,.2);
+    animation: sec 2s infinite;
+    margin-left:200px;
+    margin-top:50px;
+}
+/* CLOCK */
+.clock{
+    border:20px solid rgb(144, 126, 126);
+    background-color:rgb(0, 105, 255) ;
+    width:500px;
+    height:500px;
+    border-radius:300px;
+    margin:50px;
+    margin-bottom:100px;
+}
+.clock1{
+    border: 20px solid white;
+    border-radius: 20px;
+    margin:230px;
+}
+.clock2{
+    border: 5px solid white;
+    background-color: white;
+    margin-top:-290px;
+    margin-left:85px;
+    transform: rotate(25deg);
+    width:150px;
+}
+.clock3{
+    border: 5px solid white;
+    background-color: white;
+    margin-top:-40px;
+    margin-left:250px;
+    transform: rotate(150deg);
+    width:240px;
+}
+.clock4{
+    border: 3px solid black;
+    height:240px;
+    width: 0;
+    margin-top:80px;
+    margin-left:250px;
+}
+#txti1{
+    color:rgb(0, 105, 255);
+    font-size: 100px;
+    line-height: 50px;
+    text-shadow: 0px 15px 5px rgba(0,0,0,.2);
+    animation: sec 2s infinite;
+    margin-top:-40px;
+    margin-left:80px;
+}
+#txti2{
+    color:rgb(0, 105, 255);
+    font-size: 80px;
+    line-height: 50px;
+    text-shadow: 0px 15px 5px rgba(0,0,0,.2);
+    animation: sec 2s infinite;
+    margin-left:200px;
+    margin-top:50px;
+}
+/* ASSISTANT */
+.assistant{
+    border:2px solid whitesmoke;
+    width:500px;
+    height:500px;
+    border-radius: 250px;
+    margin:50px;
+    margin-bottom:100px;
+}
+.assistant1{
+    border:20px solid blue;
+    background-color: blue;
+    width:120px;
+    height:120px;
+    border-radius:80px;
+    margin-left:90px;
+    margin-top:90px;
+}
+.assistant2{
+    border:10px solid red;
+    background-color: red;
+    width:90px;
+    height:90px;
+    border-radius:80px;
+    margin-left:280px;
+    margin-top:-50px;
+}
+.assistant3{
+    border:10px solid rgb(250, 193, 8);
+    background-color: rgb(250, 193, 8);
+    width:80px;
+    height:80px;
+    border-radius:80px;
+    margin-left:280px;
+    margin-top:20px;
+}
+.assistant4{
+    border:10px solid green;
+    background-color: green;
+    width:20px;
+    height:20px;
+    border-radius:80px;
+    margin-left:380px;
+    margin-top:-280px;
+}
+#txtj1{
+    color:rgb(0, 105, 255);
+    font-size: 100px;
+    line-height: 50px;
+    text-shadow: 0px 15px 5px rgba(0,0,0,.2);
+    animation: sec 2s infinite;
+    margin-top:-40px;
+    margin-left:80px;
+}
+#txtj2{
+    color:rgb(0, 105, 255);
+    font-size: 80px;
+    line-height: 50px;
+    text-shadow: 0px 15px 5px rgba(0,0,0,.2);
+    animation: sec 2s infinite;
+    margin-left:200px;
+    margin-top:50px;
+}
+    </style>
+    <link rel="stylesheet" href="MediaLobo.css"></link>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="youtube">
+                        <div class="lobo"></div>
+                    </div>
+                </td>
+                <td>
+                    <h1 id="txta1">YOUTUBE </h1><h1 id="txta2">Striver</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="whatsapp">
+                        <div class="what">
+                          <div class="apps"></div>
+                          <div class="apps1"></div>
+                          <div class="apps2"></div>
+                          <div class="apps3"></div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <h1 id="txtb1">Whatsapp</h1><h1 id="txtb2">Striver</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="facebook">
+                        <div class="txt1"></div>
+                        <div class="txt2"></div>
+                        <div class="txt3"></div>
+                    </div>
+                </td>
+                <td>
+                    <h1 id="txtc1">FACEBOOK</h1><h1 id="txtc2">Striver</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="instgram">
+                        <div class="insta">
+                            <div class="gram1"></div>
+                            <div class="gram2"></div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <h1 id="txtd1">INSTGRAM</h1><h1 id="txtd2">Striver</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="linkedin">
+                        <div class="link1"></div>
+                        <div class="link2"></div>
+                        <div class="link3"></div>
+                        <div class="link4"></div>
+                        <div class="link5"></div>
+                    </div>
+                </td>
+                <td>
+                    <h1 id="txte1">LINKEDIN</h1><h1 id="txte2">Striver</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="mx-player">
+                        <div class="trangle"></div>
+                    </div>
+                </td>
+                <td>
+                    <h1 id="txtf1">MX.PLAYER</h1><h1 id="txtf2">Striver</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="yt-music">
+                        <div class="yt">
+                            <div class="music"></div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <h1 id="txtg1">YT-MUSIC</h1><h1 id="txtg2">Striver</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="photos">
+                      <div class="circle1"></div>
+                      <div class="circle2"></div>
+                      <div class="circle3"></div>
+                      <div class="circle4"></div>
+                    </div>
+                </td>
+                <td><h1 id="txth1">PHOTOS</h1><h1 id="txth2">Striver</h1></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="clock">
+                        <div class="clocks">
+                            <div class="clock1"></div>
+                            <div class="clock2"></div>
+                            <div class="clock3"></div>
+                            <div class="clock4"></div>
+                        </div>
+                    </div>
+                </td>
+                <td><h1 id="txti1">CLOCK</h1><h1 id="txti2">Striver</h1></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="assistant">
+                        <div class="assistant1"></div>
+                        <div class="assistant2"></div>
+                        <div class="assistant3"></div>
+                        <div class="assistant4"></div>
+                    </div>
+                </td>
+                <td>
+                    <h1 id="txtj1">ASSISTANT</h1><h1 id="txtj2">Striver</h1>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html> 
