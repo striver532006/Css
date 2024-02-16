@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(243, 227, 6);
+        }
+        .heart{
+            height: 200px;
+            width: 200px;
+            background-color: black;
+            transform: rotate(45deg);
+            margin: 200px;
+            position: relative;
+            animation: heartBeat 2s infinite;    
+        }
+        .heart::after,
+        .heart::before{
+            content: '';
+            height: 200px;
+            width: 200px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .heart::after{
+            top:-100px;
+            right:0;
+        }
+        .heart::before{
+            top:0;
+            left:-100px;
+        }
+        @keyframes heartBeat {
+            0%{
+                transform: scale(1);
+            }
+            50%{
+                transform: scale(1.2);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+        .text1{
+            color:black;
+            font-size: 100px;
+            line-height: 50px;
+            text-shadow: 0px 15px 5px rgba(0,0,0,.2);
+            animation: text 2s infinite; 
+            margin-top:-400px;
+            margin-left:550px;
+            margin-bottom:50px;
+        }
+        .text2{
+            color:black;
+            font-size: 100px;
+            line-height: 50px;
+            text-shadow: 0px 15px 5px rgba(0,0,0,.2);
+            animation: text 2s infinite; 
+            margin-top:90px;
+            margin-left:550px;
+        }
+        .text3{
+            color:black;
+            font-size: 100px;
+            line-height: 50px;
+            text-shadow: 0px 15px 5px rgba(0,0,0,.2);
+            animation: text 2s infinite; 
+            margin-top:90px;
+            margin-left:550px;
+        }
+        @keyframes text {
+            0%{
+                transform: scale(1);
+            }
+            50%{
+                transform: scale(1.2);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+        .striver{
+            color:black;
+            font-size: 50px;
+            line-height: 50px;
+            text-shadow: 0px 15px 5px rgba(0,0,0,.2);
+            animation: striver 8s infinite;  
+            margin-top:-50px;
+            margin-left:175px;
+        }
+        @keyframes striver{
+            40%{
+                transform: scale(2);
+            }
+            40%{
+                transform: scale(1.5);
+            }
+            40%{
+                transform: scale(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="heart"></div>
+    <div class="text">
+      <h1 class="text1">Hey! Baby</h1>
+      <h1 class="text2"> My Heart is So </h1>
+      <h1 class="text3">Weak 😂</h1>
+      <h1 class="striver">STRIVER 😉</h1>
+    </div>
+</body>
+</html>
