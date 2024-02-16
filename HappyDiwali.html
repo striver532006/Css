@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+    background-image: url(https://i.ibb.co/F50GgxB/fireworks-background-for-diwali-festival-vector-14301808.jpg); 
+    background-repeat: no-repeat;
+    background-size: 1300px;
+    margin-top: 300px;
+}
+.container{
+    display: grid;
+    place-items: center;
+    height:70px;
+    position: relative;
+    animation: container 5s infinite;    
+}
+.diya{
+    background-color: rgb(255, 183, 0);
+    height:150px;
+    width:300px;
+    overflow: hidden;
+    border-radius: 0 0 150px 150px;
+}
+.flame-container{
+    width:300px;
+    height:60px;
+    background-color: rgb(255, 77, 0); 
+    margin-bottom: -32px;
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+}
+.flame-highlight{
+    height:150px;
+    width:150px;
+    background-color: azure;
+    border-radius: 160px 0;
+    transform: rotate(-45deg);
+    margin-top: -120px;
+    margin-left: 70px;
+    opacity: 0.8;
+}
+.flame{
+    height:100px;
+    width:100px;
+    background-color: rgb(219, 234, 12);
+    border-radius: 160px 0;
+    transform: rotate(-45deg);
+    margin-top: -90px;
+    margin-left: 95px;
+    opacity: 0.8;
+    position: relative;
+    animation: flame 5s infinite;    
+}
+.text{
+    padding:0px;
+    margin:40px;
+    text-align: center;
+    color:rgb(249, 243, 243);
+    font-size: 50px;
+    line-height: 50px;
+    text-shadow: 0px 15px 5px rgba(0,0,0,.2);
+    animation: sec 2s infinite;
+}
+.text{
+    font-size: 30px;
+    animation: sec 2s infinite;
+}
+#txt{
+    color:rgb(249, 243, 243);
+    font-size: 40px;
+    line-height: 50px;
+    text-shadow: 0px 15px 5px rgba(0,0,0,.2);
+    animation: sec 2s infinite;
+}
+@keyframes container{
+            0%{
+                transform: scale(1);
+            }
+            50%{
+                transform: scale(1.2);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+             <div class="flame-container">
+        <div class="flame-highlight"></div>
+            <div class="flame"></div>
+          </div>
+        <div class="diya">
+            <div class="text">HAPPY DIWALI STRIVER</div>
+        </div>
+    <h1 id="txt">Created By Striver</h1>
+    </div>
+</body>
+</html>
