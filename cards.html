@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:aqua;
+        } 
+        #cards{
+            width:370px;
+            height:620px;
+            border-radius:10px;
+        }
+        .image{
+            padding:10px;
+        }
+        .images{
+            background-image: url("https://i.ibb.co/RhWgQDw/Whats-App-Image-2023-12-21-at-08-12-16-a46aea26.jpg");
+            background-position: center;
+            width:350px;
+            height:350px; 
+            border-radius:10px;
+        }
+        .comment{
+            text-align:center; 
+            span:first-child:hover{
+               background-color: blue;
+            }
+            span:hover{
+               background-color: aqua;
+            }
+            button:hover{
+               background-color: rgb(199, 96, 160);
+            }
+        }
+        span{
+            border:2px solid grey;
+            color:gray; 
+            border-radius:5px;
+            margin:20px;
+            padding:5px;
+        }
+        .name{
+            text-align:center;
+        }
+        .text{
+            text-align:center;
+            color:grey; 
+        }
+        button{
+            padding:10px;
+            background-color: rgb(163, 215, 255);
+            color:blue;
+            border-radius:20px;
+        }
+        
+        .dark{
+            background-color: black;
+            color:white;
+        }
+        .light{
+            background-color:white;
+            color:black;
+        }  
+    </style>
+</head>
+<body>
+    <div id="cards">
+        <div class="image">
+            <div class="images"></div>
+        </div>
+        <div class="comment"><span>Like</span><span>Comment</span></div>
+        <div>
+            <h1 class="name">STRIVER</h1>
+            <p class="text">Hii! I am a Software Engineer in the future. My name is Striver form Gorakhpur. </p>
+        </div>
+        <div class="comment"><button id="mode">Read More</button></div>
+    </div>  
+    <script>
+    let modeBtn= document.querySelector("#mode");
+    let div=document.querySelector("div");
+    let currMode="light";//dark
+    modeBtn.addEventListener("click",()=>{
+    if(currMode=="light"){
+        currMode="dark";
+        div.classList.add("dark");
+        div.classList.remove("light");
+    }
+    else{
+        currMode="light";
+        div.classList.add("light");
+        div.classList.remove("dark");
+    }
+    console.log(currMode);
+    });
+    let hii=alert("Welcome Striver Cards");
+    let read=alert("Click the read more button");
+    conslole.log(hii,read);
+    </script>
+</body>
+</html>
